@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<title>Claim Report</title>
+<style>
+@import "style.css";
+</style>
+<!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<header>
+    <h1>Claim Summary</h1>
+	<nav >
+		<div id="menucontainer">
+			<div id="menunav">
+				<ul>
+				  <li><a href="submitSummary.html" title=""><span>Home</span></a></li>
+				  <li><a href="submitSummary.html" title=""><span>Update&Submit Claim</span></a></li>
+				  <li><a href="viewSummary.html" title=""><span>View Claim Summary</span></a></li>
+				  <li><a href="submitSummary.html" title=""><span>Contact Us</span></a></li>
+				</ul>
+			<div>
+		</div>
+	 <nav>
+</header>
+<article>
+	<center>
+	<form method="post" action="submitSummary.html">
+	<table border="1" id="customers" >
+		<tr>
+		<th>Employee Id</th>
+		<th>Employee Name</th>
+		<th>Claim Number</th>
+		<th>Claim Type</th>
+		<th>Claim Programs</th>
+		<th>Claim Start date</th>
+		<th>Claim End date</th>
+		<th>Update</th>
+		</tr>
+		
+		<tr>
+		<td>10001</td>
+		<td>Maha</td>
+		<td>c0001</td>
+		<td>Submited</td>
+		<td>CProgram</td>
+		<td>10/05/2019</td>
+		<td>10/06/2019</td>
+		<td><a href="submitSummary.html?empID=10001&empName=Maha&cNum=c0001&cType=Submited&Cpgrm=CProgram">update</a></td>
+		</tr>
+		
+		<tr>
+		<td>10002</td>
+		<td>Mahalakshmi</td>
+		<td>c0001</td>
+		<td>Rejected</td>
+		<td>CProgram</td>
+		<td>10/05/2019</td>
+		<td>10/06/2019</td>
+		<td><a href="submitSummary.html">update</a></td>
+		</tr>
+		
+		<tr>
+		<td>10003</td>
+		<td>Maha</td>
+		<td>c0001</td>
+		<td>Submited</td>
+		<td>CProgram</td>
+		<td>10/05/2019</td>
+		<td>10/06/2019</td>
+		<td><a href="submitSummary.html">update</a></td>
+		</tr>
+	<table>
+	</form>
+	</center>
+	</article>
+<footer>
+   <p> @Copyright </p>
+</footer>
+</body>
+</html>

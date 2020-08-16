@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+<title>Claim Report</title>
+<style>
+@import "style.css";
+</style>
+<script>
+	function val_empid()
+	{
+		var res=document.getElementById("empIDrst")
+		var uname=/[0-9]$/;
+		var getname=document.getElementById("empID");
+		if(!uname.test(getname.value)){
+			res.innerHTML="only numbers allowed ";
+			res.style.color="#FF0000";
+			return false;
+		}
+		else{
+		res.innerHTML="Valid ID"
+		res.style.color="#0F0";
+		return true;}
+	}
+	function val_user()
+	{
+		var res=document.getElementById("empNamerst")
+		var uname=/[a-b][A-B]$/;
+		var getname=document.getElementById("empName");
+		if(!uname.test(getname.value)){
+			res.innerHTML="only alphabets are allowed ";
+			res.style.color="#FF0000";
+			return false;
+		}
+		else{
+		res.innerHTML="Valid name"
+		res.style.color="#0F0";
+		return true;}
+	}
+
+	function val_cNumber()
+	{
+		var res=document.getElementById("cNumberrst")
+		var getname=document.getElementById("cNumber");
+		if(getname.val_user < 2){
+			res.innerHTML= "Claim number length should be > 2 ";
+			res.style.color="#0000FF";
+			return false;
+		}
+		else{
+		res.innerHTML="Valid Claim number"
+		res.style.color="#0F0";
+		return true;}
+	}
+
+	function val_cType()
+	{
+		var res=document.getElementById("cType")
+		var getname=document.getElementById("cTyperst");
+		if(getname.val_user < 2){
+			res.innerHTML= "Claim number length should be > 2 ";
+			res.style.color="#0000FF";
+			return false;
+		}
+		else{
+		res.innerHTML="Valid Claim number"
+		res.style.color="#0F0";
+		return true;}
+	}
+
+	window.onload = function processUser() {
+    var parameters = location.search.substring(1).split("&");
+
+    var temp = parameters[0].split("=");
+    l = unescape(temp[1]);
+    temp = parameters[1].split("=");
+    p = unescape(temp[1]);
+	temp = parameters[2].split("=");
+    q = unescape(temp[1]);
+	temp = parameters[3].split("=");
+    r = unescape(temp[1]);
+	temp = parameters[4].split("=");
+    s = unescape(temp[1]);
+    document.getElementById("empID").value = l;
+    document.getElementById("empName").value = p;
+	document.getElementById("cNumber").value = q;
+	document.getElementById("cType").value = r;
+	document.getElementById("cstartDate").value = s;
+	document.getElementById("datetime").innerHTML= Date();
+  }
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+<header>
+    <h1>Claim Summary Report</h1>
+	<nav >
+		<div id="menucontainer">
+			<div id="menunav">
+				<ul>
+				  <li><a href="submitSummary.html" title=""><span>Home</span></a></li>
+				  <li><a href="submitSummary.html" title=""><span>Update&Submit Claim</span></a></li>
+				  <li><a href="viewSummary.html" title=""><span>View Claim Summary</span></a></li>
+				  <li><a href="submitSummary.html" title=""><span>Contact Us</span></a></li>
+				</ul>
+			<div>
+		</div>
+		<div id="logout">
+			<a href="loginNew.html" title=""><span>LogOut</span>
+		</div>
+	 <nav>
+</header>
+<article>
+<span id="topcorner">
+	<p id="datetime">Date</p>
+</span>
+<div id="top">
+  <h1 align="center"> Claim Summary Submission<h1>
+  </div>
+  <div class="middle">
+ <center>
+ <form action="thanq.html" method="get" name="student"  onsubmit="return dropdown();" onreset='return confirm("Are you sure reset all the values?");'>
+ <font>
+  <table>
+  <tr>
+	<td>Employee Id<sup>*</sup></td>
+	<td>
+	<div><input type="text" size=20 name="empID" id="empID" onkeyup="return val_empid();" required><span id="empIDrst"><span><div>
+	</td>
+  </tr>
+  <tr>
+  <td>Employee Name<sup>*</sup></td>
+  <td><div><input type="text" size=20 name="empName" id="empName" onkeyup="return val_user();" required><span id="empNamerst"><span><div></div>
+  </tr>
+  <tr>
+	<td>Claim Number<sup>*</sup></td>
+	<td>
+	<div><input type="text" size=20 name="cNumber" id="cNumber" onkeyup="return val_user();" required><span id="cNumberrst"><span><div>
+	</td>
+  </tr>
+  <tr>
+	<td>Claim Type<sup>*</sup></td>
+	<td>
+	<div><input type="text" size=20 name="cType" id="cType" onblur="return val_user();" required><span id="cTyperst"><span><div>
+	</td>
+  </tr>
+  <tr>
+	<td>Claim Start date<sup>*</sup></td>
+	<td>
+	<div><input type="date" name="cstartDate" id="cstartDate" onkeyup="return val_user();" required><span id="cstartDaterst"><span><div>
+	</td>
+  </tr>
+  <tr>
+		<td>Claim Start date<sup>*</sup></td>
+		<td>
+		<div><input type="date" name="cendDate" id="cendDate" onkeyup="return val_user();" required><span id="cendDaterst"><span><div>
+		</td>
+	  </tr>
+  <tr>
+	<td>Claim Programs<sup>*</sup></td>
+	<td>
+	<div><input type="text" size=20 name="cPrograms" id="cPrograms" onblur="return val_user();" required><span id="cProgramsrst"><span><div>
+	</td>
+  </tr>
+  </table>
+  <button type="submit" >Submit </button>
+  <button type="cancel" > Cancel </button>
+  </font>
+  </form>
+  </center>
+</article>
+<footer>
+   <p> @Copyright </p>
+</footer>
+</body>
+</html>
