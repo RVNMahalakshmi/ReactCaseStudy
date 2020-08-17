@@ -1,0 +1,76 @@
+{
+    "claims": [
+        {
+            "EmployeeID": 1861,
+            "EmployeeName": "Whilemina",
+            "ClaimNumber": "C0A 2Z5",
+            "ClaimType": "N0M 1E6",
+            "ClaimStartDate": "21/03/2020",
+            "ClaimEdDate": "13/01/2021",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1683,
+            "EmployeeName": "Gail",
+            "ClaimNumber": "M2C 7M1",
+            "ClaimType": "R4Z 9S3",
+            "ClaimStartDate": "17/01/2020",
+            "ClaimEdDate": "10/11/2019",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1094,
+            "EmployeeName": "Wendy",
+            "ClaimNumber": "A0I 0E4",
+            "ClaimType": "X6L 0Y4",
+            "ClaimStartDate": "16/08/2021",
+            "ClaimEdDate": "28/10/2019",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1883,
+            "EmployeeName": "Dora",
+            "ClaimNumber": "F6E 2F6",
+            "ClaimType": "R2N 0B6",
+            "ClaimStartDate": "20/10/2019",
+            "ClaimEdDate": "27/07/2021",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1874,
+            "EmployeeName": "Beverly",
+            "ClaimNumber": "X2M 8H6",
+            "ClaimType": "J8D 5U4",
+            "ClaimStartDate": "21/12/2020",
+            "ClaimEdDate": "13/01/2020",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1550,
+            "EmployeeName": "Blair",
+            "ClaimNumber": "V9G 2E4",
+            "ClaimType": "B6B 6N3",
+            "ClaimStartDate": "24/08/2019",
+            "ClaimEdDate": "24/10/2019",
+            "ClaimProgram": "ClaimProgram"
+        },
+        {
+            "EmployeeID": 1590,
+            "EmployeeName": "Brynne",
+            "ClaimNumber": "X8L 7G5",
+            "ClaimType": "R9Q 7F3",
+            "ClaimStartDate": "21/10/2019",
+            "ClaimEdDate": "25/01/2021",
+            "ClaimProgram": "ClaimProgram."
+        },
+        {
+            "EmployeeID": 1044,
+            "EmployeeName": "Phyllis",
+            "ClaimNumber": "M7Q 3O4",
+            "ClaimType": "M2O 6F6",
+            "ClaimStartDate": "20/12/2020",
+            "ClaimEdDate": "25/05/2021",
+            "ClaimProgram": "ClaimProgram"
+        }
+    ]
+}
